@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukesh Jha (Chain) | Profile</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1e293b, #0b1120);
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Loader Screen */
+    .loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 3.5px solid rgba(255, 255, 255, 0.1);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      font-size: 15px;
+      color: #94a3b8;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    /* Main Card */
+    .hidden {
+      display: none !important;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 35px 25px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      max-width: 400px;
+      width: 100%;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .designation {
+      font-size: 13px;
+      font-weight: 600;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    p.bio {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 22px;
+    }
+
+    /* Action / Social Links */
+    .links-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 14px;
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.04);
+      color: #f8fafc;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: all 0.25s ease;
+    }
+
+    .link-btn i {
+      font-size: 18px;
+      width: 22px;
+      text-align: center;
+    }
+
+    /* Hover States & Custom Colors */
+    .link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-whatsapp:hover { background: #25d366; color: #0b1120; border-color: #25d366; }
+    .btn-github:hover { background: #ffffff; color: #0b1120; border-color: #ffffff; }
+    .btn-instagram:hover { background: #e1306c; color: #ffffff; border-color: #e1306c; }
+    .btn-email:hover { background: #ea4335; color: #ffffff; border-color: #ea4335; }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div id="loader" class="loader-container">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading Profile...</div>
+  </div>
+
+  <!-- Profile Card -->
+  <div id="main-content" class="card hidden">
+    
+    <!-- Local Profile Image -->
+    <img src="profile.jpg" alt="Mukesh Jha" class="profile-img">
+
+    <!-- Name & Title -->
+    <h1>Mukesh Jha (Chain)</h1>
+    <div class="designation">Software Developer</div>
+
+    <!-- Bio -->
+    <p class="bio">Eat • Sleep • Code • Repeat</p>
+
+    <!-- Links -->
+    <div class="links-group">
+      <a href="https://wa.me/919534266778" target="_blank" class="link-btn btn-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+
+      <a href="https://github.com/IndianJTAGTeam2022" target="_blank" class="link-btn btn-github">
+        <i class="fa-brands fa-github"></i> GitHub Profile
+      </a>
+
+      <a href="https://www.instagram.com/mukeshjhajadeja?igsi=MTU4YXY1djcydnNlaA==" target="_blank" class="link-btn btn-instagram">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+
+      <a href="mailto:indianjtagteam2018@gmail.com" class="link-btn btn-email">
+        <i class="fa-solid fa-envelope"></i> Send Email
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    // 1.2 second loader delay
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').classList.add('hidden');
+        document.getElementById('main-content').classList.remove('hidden');
+      }, 1200);
+    });
+  </script>
+</body>
+</html>
