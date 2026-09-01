@@ -230,6 +230,96 @@
       gap: 11px;
     }
 
+    /* Portfolio Sections */
+    .section-title {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #38bdf8;
+      text-align: left;
+      margin: 24px 2px 10px;
+      text-transform: uppercase;
+    }
+
+    .project-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px;
+      margin-bottom: 9px;
+      text-align: left;
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(56,189,248,0.12);
+      border-radius: 14px;
+      transition: .3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0,242,254,.45);
+      box-shadow: 0 6px 20px rgba(0,242,254,.12);
+    }
+
+    .project-icon {
+      min-width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(0,242,254,.08);
+      font-size: 19px;
+    }
+
+    .project-info h3 {
+      font-size: 13px;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+
+    .project-info p {
+      font-size: 11px;
+      line-height: 1.45;
+      color: #94a3b8;
+      margin-bottom: 5px;
+    }
+
+    .project-status {
+      font-size: 9px;
+      letter-spacing: .7px;
+      color: #10b981;
+      font-weight: 700;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .skill {
+      padding: 6px 9px;
+      border-radius: 8px;
+      font-size: 10px;
+      color: #cbd5e1;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .update-box {
+      text-align: left;
+      padding: 12px 13px;
+      border-radius: 13px;
+      background: rgba(255,0,127,.035);
+      border: 1px solid rgba(255,0,127,.14);
+      font-size: 11px;
+      line-height: 1.55;
+      color: #cbd5e1;
+    }
+
+    .update-box strong {
+      color: #ff65ad;
+    }
+
     .tool-btn {
       display: flex;
       align-items: center;
@@ -345,6 +435,66 @@
           > Core: <span>Active & Ready</span><br>
           > Status: <span class="status">● ONLINE</span>
         </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section-title">⚡ Projects</div>
+
+      <div class="project-card">
+        <div class="project-icon">⚡</div>
+        <div class="project-info">
+          <h3>IJT ADB & Fastboot Tool</h3>
+          <p>Android device maintenance and ADB/Fastboot utility.</p>
+          <span class="project-status">● ACTIVE DEVELOPMENT</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📱</div>
+        <div class="project-info">
+          <h3>IJT PRO Samsung Flasher</h3>
+          <p>Samsung firmware management and flashing platform.</p>
+          <span class="project-status">● DEVELOPMENT</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🔧</div>
+        <div class="project-info">
+          <h3>CHAIN FS Explorer</h3>
+          <p>File-system exploration and analysis project.</p>
+          <span class="project-status">● ACTIVE</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🧰</div>
+        <div class="project-info">
+          <h3>CHAIN HexForge</h3>
+          <p>Hex and binary analysis focused development project.</p>
+          <span class="project-status">● ACTIVE</span>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="section-title">🛠️ Skills & Technologies</div>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">PySide6</span>
+        <span class="skill">ADB</span>
+        <span class="skill">Fastboot</span>
+        <span class="skill">Samsung</span>
+        <span class="skill">USB</span>
+        <span class="skill">Reverse Engineering</span>
+        <span class="skill">Firmware Analysis</span>
+      </div>
+
+      <!-- Updates -->
+      <div class="section-title">📰 Latest Update</div>
+      <div class="update-box">
+        <strong>CHAIN SYSTEM</strong><br>
+        IJT tools and developer projects are under active development.
+        More releases, utilities and project updates will be added here.
       </div>
 
       <!-- Neon Buttons -->
